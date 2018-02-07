@@ -43,7 +43,6 @@ KEY_VolumeUp,	KEY_Mute,	_pause,
 KEY_VolumeDown,	_arrowU,	_print,		_space,	
 _arrowL,	_arrowD,	_arrowR	)
 
-
 	KB_MATRIX_LAYER(  // layout: layer 1: numpad
 // left hand
 	0,		0,		0,		0,		0,		0,		0,	
@@ -56,7 +55,6 @@ _arrowL,	_arrowD,	_arrowR	)
 									0,		0,		0,		0,	
 											0,		0,		0,
 
-
 // right hand
 	0,		0,			0,			0,			0,			0,		0,
 	0,		_equal_kp,	_div_kp,	_mul_kp,    _sub_kp,  	0,		0,
@@ -66,51 +64,6 @@ _arrowL,	_arrowD,	_arrowR	)
 						_0_kp,		_dec_del_kp, _enter_kp,	0,		0,
 0,	0,	0,	
 0,	0,	0,	_0_kp,	
-0,	0,	0	)
-
-	KB_MATRIX_LAYER(  // layout: layer 2: unused
-// left hand
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	
-						0,	0,	0,	
-					0,	0,	0,	0,	
-						0,	0,	0,
-// right hand
-	0,	0,	0,	0,	0,	0,	0,
-	0,	0,  0,  0,	0,	0,	0,
-	0,	0,  0,  0,	0,	0,	0,
-	0,	0,  0,  0,	0,	0,	0,
-		0,  0,	0,	0,	0,	0,
-			0,	0,	0,	0,	0,
-0,	0,	0,	
-0,	0,	0,	0,	
-0,	0,	0	)
-
-
-	KB_MATRIX_LAYER(  // layout: layer 3: unused
-// left hand
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	
-						0,	0,	0,	
-					0,	0,	0,	0,	
-						0,	0,	0,
-// right hand
-	0,	0,	0,	0,	0,	0,	0,
-	0,	0,  0,  0,	0,	0,	0,
-	0,	0,  0,  0,	0,	0,	0,
-	0,	0,  0,  0,	0,	0,	0,
-		0,  0,	0,	0,	0,	0,
-			0,	0,	0,	0,	0,
-0,	0,	0,	
-0,	0,	0,	0,	
 0,	0,	0	)
 
 };
@@ -183,54 +136,7 @@ kprrel,	kprrel,	kprrel,
 kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel	)
 
-
 	KB_MATRIX_LAYER(  // press: layer 1: function and symbol keys
-// left hand
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-						 				kprrel,	kprrel,	kprrel,	
-								kprrel,	kprrel,	kprrel,	kprrel,	
-										kprrel,	kprrel,	kprrel,
-// right hand 
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-			kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-					kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel	)
-
-
-	KB_MATRIX_LAYER(  // press: layer 2: keyboard functions
-// left hand
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-						 				kprrel,	kprrel,	kprrel,	
-								kprrel,	kprrel,	kprrel,	kprrel,	
-										kprrel,	kprrel,	kprrel,
-// right hand 
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-			kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-					kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel	)
-
-
-	KB_MATRIX_LAYER(  // press: layer 3: numpad
 // left hand
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
@@ -281,7 +187,6 @@ kprrel,	kprrel,	kprrel,
 kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel	)
 
-
 	KB_MATRIX_LAYER(  // release: layer 1: function and symbol keys
 // left hand
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
@@ -303,52 +208,6 @@ kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel	)
-
-	KB_MATRIX_LAYER(  // release: layer 2: keyboard functions
-// left hand
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-						 				kprrel,	kprrel,	kprrel,	
-								kprrel,	kprrel,	kprrel,	kprrel,	
-										kprrel,	kprrel,	kprrel,
-// right hand 
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-			kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-					kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel	)
-
-
-	KB_MATRIX_LAYER(  // release: layer 3: numpad
-// left hand
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-						 				kprrel,	kprrel,	kprrel,	
-								kprrel,	kprrel,	kprrel,	kprrel,	
-										kprrel,	kprrel,	kprrel,
-// right hand 
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-			kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-					kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel	)
-
 
 	KB_MATRIX_LAYER(  // release: layer null: nothing (just making sure unused
 			  // functions don't get compiled out)
