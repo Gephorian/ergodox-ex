@@ -46,9 +46,6 @@
      * --------------------------------------------------------------------
      */
     #define KB_MATRIX_LAYER(                         \
-            /* for unused positions */               \
-            na,                                      \
-                                                     \
             /* left hand, spatial positions */       \
             k60,k61,k62,k63,k64,k65,k66,             \
             k50,k51,k52,k53,k54,k55,k56,             \
@@ -69,8 +66,7 @@
                         k19,k1A,k1B,k1C,k1D,         \
             k0D,k0C,k27,                             \
             k0A,k0B,k18,k17,                         \
-            k09,k08,k07                              \
-            )                                        \
+            k09,k08,k07 )                            \
                                                      \
     /* matrix positions */                           \
     {{ k00,k01,k02,k03,k04,k05,k06, k07,k08,k09,k0A,k0B,k0C,k0D },  \
@@ -79,14 +75,11 @@
      { k30,k31,k32,k33,k34,k35,k36, k37,k38,k39,k3A,k3B,k3C,k3D },  \
      { k40,k41,k42,k43,k44,k45,k46, k47,k48,k49,k4A,k4B,k4C,k4D },  \
      { k50,k51,k52,k53,k54,k55,k56, k57,k58,k59,k5A,k5B,k5C,k5D },  \
-     { k60,k61,k62,k63,k64,k65,k66, k67,k68,k69,k6A,k6B,k6C,k6D }}
+     { k60,k61,k62,k63,k64,k65,k66, k67,k68,k69,k6A,k6B,k6C,k6D }}  \
 
 
     #define KB_MATRIX_LAYER_SET_ALL(na, kxx)         \
         LAYER(                                       \
-            /* for unused positions */               \
-            na,                                      \
-                                                     \
             /* left hand, spatial positions */       \
             kxx,kxx,kxx,kxx,kxx,kxx,kxx,             \
             kxx,kxx,kxx,kxx,kxx,kxx,kxx,             \
