@@ -28,21 +28,13 @@
      *   matrix position (which also corresponds to the row and column pin
      *   labels used in the teensy and mcp23018 files)
      *
-     * - coordinates
-     *   - optional keys
-     *     k15, k16 (left hand thumb group)
-     *     k17, k18 (right hand thumb group)
-     *   - unused keys
-     *     k36, k00 (left hand)
-     *     k37, k0D (right hand)
-     *
      * --- other info -----------------------------------------------------
      *           rows x columns = positions;  used,  unused
-     * per hand:    6 x  7      = 42;         40,    2
-     *    total:    6 x 14      = 84;         80,    4
+     * per hand:    7 x  7      = 49;         49,    0
+     *    total:    7 x 14      = 98;         98,    0
      *
-     * left hand  : rows 0..5, cols 0..6
-     * right hand : rows 0..5, cols 7..D
+     * left hand  : rows 0..6, cols 0..6
+     * right hand : rows 0..6, cols 7..D
      * --------------------------------------------------------------------
      */
     #define KB_MATRIX_LAYER(                         \

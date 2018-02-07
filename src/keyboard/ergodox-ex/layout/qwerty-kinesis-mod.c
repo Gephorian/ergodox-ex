@@ -41,7 +41,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 							_quote,		_bracketL,	_bracketR,	_altR,		_ctrlR,
 KEY_VolumeUp,	KEY_Mute,	_pause,	
 KEY_VolumeDown,	_arrowU,	_print,		_space,	
-_arrowL,	_arrowD,	_arrowR	)
+_arrowL,	_arrowD,	_arrowR	),
 
 	KB_MATRIX_LAYER(  // layout: layer 1: numpad
 // left hand
@@ -134,7 +134,7 @@ kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 					kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel	)
+kprrel,	kprrel,	kprrel	),
 
 	KB_MATRIX_LAYER(  // press: layer 1: function and symbol keys
 // left hand
@@ -185,7 +185,7 @@ kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 					kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel	)
+kprrel,	kprrel,	kprrel	),
 
 	KB_MATRIX_LAYER(  // release: layer 1: function and symbol keys
 // left hand
@@ -207,7 +207,7 @@ kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 					kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel	)
+kprrel,	kprrel,	kprrel	),
 
 	KB_MATRIX_LAYER(  // release: layer null: nothing (just making sure unused
 			  // functions don't get compiled out)
