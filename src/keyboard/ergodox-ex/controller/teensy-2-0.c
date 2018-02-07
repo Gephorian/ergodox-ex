@@ -60,21 +60,22 @@
 #define  UNUSED_4  E, 6  // hard to use with breadboard (internal)
 
 // --- rows
-#define  ROW_0  F, 7
-#define  ROW_1  F, 6
-#define  ROW_2  F, 5
-#define  ROW_3  F, 4
-#define  ROW_4  F, 1
-#define  ROW_5  F, 0
+#define  ROW_0  B, 6
+#define  ROW_1  F, 7
+#define  ROW_2  F, 6
+#define  ROW_3  F, 5
+#define  ROW_4  F, 4
+#define  ROW_5  F, 1
+#define  ROW_6  F, 0
 
 // --- columns
-#define  COLUMN_7  B, 0
-#define  COLUMN_8  B, 1
-#define  COLUMN_9  B, 2
+#define  COLUMN_7  D, 3
+#define  COLUMN_8  D, 2
+#define  COLUMN_9  B, 7
 #define  COLUMN_A  B, 3
-#define  COLUMN_B  D, 2
-#define  COLUMN_C  D, 3
-#define  COLUMN_D  C, 6
+#define  COLUMN_B  B, 2
+#define  COLUMN_C  B, 1
+#define  COLUMN_D  B, 0
 
 // --- helpers
 #define  SET    |=
@@ -109,7 +110,8 @@
 		teensypin_write(register, operation, ROW_2);	\
 		teensypin_write(register, operation, ROW_3);	\
 		teensypin_write(register, operation, ROW_4);	\
-		teensypin_write(register, operation, ROW_5); }	\
+		teensypin_write(register, operation, ROW_5); 	\
+		teensypin_write(register, operation, ROW_6); }	\
 	while(0)
 
 #define  teensypin_write_all_column(register, operation)		\
@@ -138,6 +140,7 @@
 		matrix[0x3][0x##column] = ! teensypin_read(ROW_3);	\
 		matrix[0x4][0x##column] = ! teensypin_read(ROW_4);	\
 		matrix[0x5][0x##column] = ! teensypin_read(ROW_5);	\
+		matrix[0x5][0x##column] = ! teensypin_read(ROW_6);	\
 		/* set column hi-Z (set as input) */			\
 		teensypin_write(DDR, CLEAR, COLUMN_##column);		\
 	} while(0)
@@ -208,7 +211,7 @@ uint8_t teensy_init(void) {
 /* returns
  * - success: 0
  */
-#if KB_ROWS != 6 || KB_COLUMNS != 14
+#if KB_ROWS != 7 || KB_COLUMNS != 14
 	#error "Expecting different keyboard dimensions"
 #endif
 
@@ -220,6 +223,7 @@ uint8_t teensy_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
 		update_columns_for_row(matrix, 3);
 		update_columns_for_row(matrix, 4);
 		update_columns_for_row(matrix, 5);
+		update_columns_for_row(matrix, 6);
 	#elif TEENSY__DRIVE_COLUMNS
 		update_rows_for_column(matrix, 7);
 		update_rows_for_column(matrix, 8);
