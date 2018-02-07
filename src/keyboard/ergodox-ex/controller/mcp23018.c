@@ -106,7 +106,7 @@ out:
  * - success: 0
  * - failure: twi status code
  */
-#if KB_ROWS != 6 || KB_COLUMNS != 14
+#if KB_ROWS != 7 || KB_COLUMNS != 14
 	#error "Expecting different keyboard dimensions"
 #endif
 uint8_t mcp23018_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
@@ -133,7 +133,7 @@ uint8_t mcp23018_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
 	// update our part of the matrix
 
 	#if MCP23018__DRIVE_ROWS
-		for (uint8_t row=0; row<=5; row++) {
+		for (uint8_t row=0; row<=6; row++) {
 			// set active row low  : 0
 			// set other rows hi-Z : 1
 			twi_start();
