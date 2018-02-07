@@ -388,7 +388,10 @@ NULL,
  lpush4,  lpop4, s2kcap,   NULL,   NULL,   NULL,   NULL,   NULL,
  lpush5,  lpop5,slpunum,   NULL,   NULL,   NULL,   NULL,   NULL,
  lpush6,  lpop6,slponum,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush7,  lpop7,   NULL,   NULL,   NULL,   NULL,   NULL,   NULL )
+ lpush7,  lpop7,   NULL,   NULL,   NULL,   NULL,   NULL,   NULL,
+ NULL,    NULL,    NULL,   NULL,   NULL,   NULL,   NULL,   NULL,
+ NULL,    NULL,    NULL,   NULL,   NULL,   NULL,   NULL,   NULL,
+ NULL,    NULL )
 
 };
 
