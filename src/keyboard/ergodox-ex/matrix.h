@@ -68,7 +68,7 @@
 					k28,k29,k2A,k2B,k2C,k2D,		 \
 			            k19,k1A,k1B,k1C,k1D,		 \
 			k0D,k0C,k27,     \
-			k1A,k0B,k18,k17, \
+			k0A,k0B,k18,k17, \
 			k09,k08,k07      \
 			)				 \
 							 \
