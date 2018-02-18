@@ -138,7 +138,7 @@
 		matrix[0x3][0x##column] = ! teensypin_read(ROW_3);	\
 		matrix[0x4][0x##column] = ! teensypin_read(ROW_4);	\
 		matrix[0x5][0x##column] = ! teensypin_read(ROW_5);	\
-		matrix[0x5][0x##column] = ! teensypin_read(ROW_6);	\
+		matrix[0x6][0x##column] = ! teensypin_read(ROW_6);	\
 		/* set column hi-Z (set as input) */			\
 		teensypin_write(DDR, CLEAR, COLUMN_##column);		\
 	} while(0)
