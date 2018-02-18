@@ -43,6 +43,22 @@
                               PD5 --/ | | | \-- PD4
                               Vcc ----/ | \---- RST
                               GND-------/
+### New layout for ErgoEX
+              power_negative  GND +---.....---+ Vcc  power_positive
+                    column_D  PB0 +           + PF0  row_6
+                    column_C  PB1 +           + PF1  row_5
+                    column_B  PB2 +           + PF4  row_4
+                    column_A  PB3 +  o     o  + PF5  row_3
+                (OC1C) LED_3  PB7 + PE6  AREF + PF6  row_2
+                 (SCL)   I2C  PD0 +           + PF7  row_1
+                 (SDA)   I2C  PD1 +           + PB6  LED_2 (OC1B)
+                    column_9  PD2 +           + PB5  LED_1 (OC1A)
+                    column_8  PD3 +           + PB4  = Vcc
+                    column_7  PC6 +           o PD7  row_0
+                              PC7 o-o-o-o-o-o-+ PD6  onboardLED = GND
+                              PD5 --/ | | | \-- PD4
+                              Vcc ----/ | \---- RST
+                              GND-------/
 
 * notes:
     * Row and column assignments are to matrix positions, which may or may
