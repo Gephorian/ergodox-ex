@@ -139,7 +139,7 @@ uint8_t mcp23018_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
 			twi_start();
 			twi_send(TWI_ADDR_WRITE);
 			twi_send(GPIOB);
-			twi_send( 0xFF & ~(1<<(5-row)) );
+			twi_send( 0xFF & ~(1<<(6-row)) );
 			twi_stop();
 
 			// read column data
@@ -185,7 +185,7 @@ uint8_t mcp23018_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
 
 			// update matrix
 			for (uint8_t row=0; row<=6; row++) {
-				matrix[6-row][6-col] = !( data & (1<<(5-row)) );
+				matrix[6-row][6-col] = !( data & (1<<(6-row)) );
 			}
 		}
 
