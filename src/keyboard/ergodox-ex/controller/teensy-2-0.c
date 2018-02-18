@@ -68,13 +68,13 @@
 #define  ROW_6  F, 0
 
 // --- columns
-#define  COLUMN_7  C, 6
-#define  COLUMN_8  D, 3
-#define  COLUMN_9  D, 2
+#define  COLUMN_7  B, 0
+#define  COLUMN_8  B, 1
+#define  COLUMN_9  B, 2
 #define  COLUMN_A  B, 3
-#define  COLUMN_B  B, 2
-#define  COLUMN_C  B, 1
-#define  COLUMN_D  B, 0
+#define  COLUMN_B  D, 2
+#define  COLUMN_C  D, 3
+#define  COLUMN_D  C, 6
 
 // --- helpers
 #define  SET    |=

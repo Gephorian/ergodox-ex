@@ -54,7 +54,7 @@
                  (SDA)   I2C  PD1 +           + PB6  LED_2 (OC1B)
                     column_9  PD2 +           + PB5  LED_1 (OC1A)
                     column_8  PD3 +           + PB4  = Vcc
-                    column_7  PC6 +           o PD7  row_0
+                    column_7  PC6 +           + PD7  row_0
                               PC7 o-o-o-o-o-o-+ PD6  onboardLED = GND
                               PD5 --/ | | | \-- PD4
                               Vcc ----/ | \---- RST
