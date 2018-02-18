@@ -32,9 +32,9 @@
 	 *   #define  TEENSY__DRIVE_ROWS       1
 	 *   #define  MCP23018__DRIVE_ROWS     1
 	 */
-	#define  TEENSY__DRIVE_ROWS       0
-	#define  TEENSY__DRIVE_COLUMNS    1
-	#define  MCP23018__DRIVE_ROWS     0
-	#define  MCP23018__DRIVE_COLUMNS  1
+	#define  TEENSY__DRIVE_ROWS       1
+	#define  TEENSY__DRIVE_COLUMNS    0
+	#define  MCP23018__DRIVE_ROWS     1
+	#define  MCP23018__DRIVE_COLUMNS  0
 
 #endif
