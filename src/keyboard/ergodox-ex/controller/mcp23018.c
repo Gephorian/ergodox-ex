@@ -153,7 +153,7 @@ uint8_t mcp23018_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
 
 			// update matrix
 			for (uint8_t col=0; col<=6; col++) {
-				matrix[6-row][6-col] = !( data & (1<<col) );
+				matrix[6-col][6-row] = !( data & (1<<col) );
 			}
 		}
 
@@ -185,7 +185,7 @@ uint8_t mcp23018_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
 
 			// update matrix
 			for (uint8_t row=0; row<=6; row++) {
-				matrix[6-row][6-col] = !( data & (1<<(6-row)) );
+				matrix[6-col][6-row] = !( data & (1<<(6-row)) );
 			}
 		}
 
