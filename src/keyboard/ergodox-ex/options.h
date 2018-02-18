@@ -34,7 +34,8 @@
 	 */
 	#define  TEENSY__DRIVE_ROWS       1
 	#define  TEENSY__DRIVE_COLUMNS    0
-	#define  MCP23018__DRIVE_ROWS     1
-	#define  MCP23018__DRIVE_COLUMNS  0
+    // Rows/columns are backwards on the i2c chip. TODO: Fix this in firmware so the code matches the schematic
+	#define  MCP23018__DRIVE_ROWS     0
+	#define  MCP23018__DRIVE_COLUMNS  1
 
 #endif
