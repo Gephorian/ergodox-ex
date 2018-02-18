@@ -121,7 +121,7 @@ uint8_t mcp23018_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
 	// if there was an error
 	if (ret) {
 		// clear our part of the matrix
-		for (uint8_t row=0; row<=5; row++)
+		for (uint8_t row=0; row<=6; row++)
 			for (uint8_t col=0; col<=6; col++)
 				matrix[row][col] = 0;
 
@@ -153,7 +153,7 @@ uint8_t mcp23018_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
 
 			// update matrix
 			for (uint8_t col=0; col<=6; col++) {
-				matrix[row][col] = !( data & (1<<col) );
+				matrix[6-row][6-col] = !( data & (1<<col) );
 			}
 		}
 
@@ -184,8 +184,8 @@ uint8_t mcp23018_update_matrix(bool matrix[KB_ROWS][KB_COLUMNS]) {
 			twi_stop();
 
 			// update matrix
-			for (uint8_t row=0; row<=5; row++) {
-				matrix[row][col] = !( data & (1<<(5-row)) );
+			for (uint8_t row=0; row<=6; row++) {
+				matrix[6-row][6-col] = !( data & (1<<(5-row)) );
 			}
 		}
 
