@@ -57,7 +57,7 @@ SCRIPTS := build-scripts
 all: dist
 
 clean:
-	git clean -dX  # remove ignored files and directories
+	git clean -dfX  # remove ignored files and directories
 	-rm -r '$(BUILD)'
 
 build-dir:
