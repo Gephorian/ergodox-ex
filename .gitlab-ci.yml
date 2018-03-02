@@ -1,2 +1,7 @@
 make:
-  script: "make"
+  script: "make clean && make && make zip"
+  only: "^dev.*$"
+
+artifacts:
+  paths:
+  - 'build/*.zip'
