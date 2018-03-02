@@ -75,25 +75,25 @@ $(ROOT)/firmware.%: firmware
 	cp 'src/firmware.$*' '$@'
 
 
-$(ROOT)/firmware--ui-info.json: $(SCRIPTS)/gen-ui-info.py checkin
-	( ./'$<' \
-		--current-date '$(shell $(DATE_PROG) --rfc-3339 s)' \
-		--git-commit-date '$(GIT_COMMIT_DATE)' \
-		--git-commit-id '$(GIT_COMMIT_ID)' \
-		--map-file-path '$(BUILD)/$(TARGET)/firmware.map' \
-		--source-code-path 'src' \
-		--matrix-file-path 'src/keyboard/$(KEYBOARD)/matrix.h' \
-		--layout-file-path \
-			'src/keyboard/$(KEYBOARD)/layout/$(LAYOUT).c' \
-	) > '$@'
+#$(ROOT)/firmware--ui-info.json: $(SCRIPTS)/gen-ui-info.py checkin
+#	( ./'$<' \
+#		--current-date '$(shell $(DATE_PROG) --rfc-3339 s)' \
+#		--git-commit-date '$(GIT_COMMIT_DATE)' \
+#		--git-commit-id '$(GIT_COMMIT_ID)' \
+#		--map-file-path '$(BUILD)/$(TARGET)/firmware.map' \
+#		--source-code-path 'src' \
+#		--matrix-file-path 'src/keyboard/$(KEYBOARD)/matrix.h' \
+#		--layout-file-path \
+#			'src/keyboard/$(KEYBOARD)/layout/$(LAYOUT).c' \
+#	) > '$@'
 
-$(ROOT)/firmware--layout.html: \
-	$(SCRIPTS)/gen-layout.py \
-	$(ROOT)/firmware--ui-info.json
-	\
-	( ./'$<' \
-		--ui-info-file '$(ROOT)/firmware--ui-info.json' \
-	) > '$@'
+#$(ROOT)/firmware--layout.html: \
+#	$(SCRIPTS)/gen-layout.py \
+#	$(ROOT)/firmware--ui-info.json
+#	\
+#	( ./'$<' \
+#		--ui-info-file '$(ROOT)/firmware--ui-info.json' \
+#	) > '$@'
 
 
 dist: \
@@ -101,9 +101,9 @@ dist: \
 	build-dir \
 	$(ROOT)/firmware.hex \
 	$(ROOT)/firmware.eep \
-	$(ROOT)/firmware.map \
-	$(ROOT)/firmware--ui-info.json \
-	$(ROOT)/firmware--layout.html
+	$(ROOT)/firmware.map
+#	$(ROOT)/firmware--ui-info.json \
+#	$(ROOT)/firmware--layout.html
 
 zip: dist
 	( cd '$(BUILD)/$(TARGET)'; \
