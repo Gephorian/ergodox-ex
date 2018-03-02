@@ -61,9 +61,6 @@ clean:
 	git clean -dX  # remove ignored files and directories
 	-rm -r '$(BUILD)'
 
-checkin:
-	-git commit -a
-
 build-dir:
 	-rm -r '$(BUILD)/$(TARGET)'*
 	-mkdir -p '$(BUILD)/$(TARGET)'
@@ -97,7 +94,6 @@ $(ROOT)/firmware.%: firmware
 
 
 dist: \
-	checkin \
 	build-dir \
 	$(ROOT)/firmware.hex \
 	$(ROOT)/firmware.eep \
