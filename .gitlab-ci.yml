@@ -1,6 +1,7 @@
+stages:
+  - build
+
 build:
-  stages:
-    - build
   script: "make clean && make && make zip"
   only: 
     - /^dev.*$/
