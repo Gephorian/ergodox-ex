@@ -118,7 +118,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 // left hand
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kpprel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
+kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
