@@ -25,7 +25,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 // left hand
 	_esc,		_F1,		_F2,		_F3,		_F4,		_F5,		_F6,	
 	_grave,		_1,			_2,			_3,			_4,			_5,			_dash,	
-	_tab,		_Q,			_W,			_E,			_R,			_T,			0,	
+	_tab,		_Q,			_W,			_E,			_R,			_T,			_del,	
 	_esc,	 	_A,			_S,			_D,			_F,			_G,			_enter,	
 	_shiftL,	_Z,			_X,			_C,			_V,			_B,	
 	_ctrlL,		_guiL,		0,			0,			_altL,	
@@ -39,8 +39,8 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 	_del,		_H,      	_J,      	_K,      	_L, 		_semicolon,	_enter,
 				_N,     	_M,			_comma, 	_period,    _slash,   	_shiftR,
 							_quote,		_bracketL,	_bracketR,	_altR,		_ctrlR,
-KEY_VolumeUp,	KEY_Mute,	_pause,	
-KEY_VolumeDown,	_arrowU,	_print,		_space,	
+_pageU,	0,	_pause,	
+_pageD,	_arrowU,	_print,		_space,	
 _arrowL,	_arrowD,	_arrowR	),
 
 	KB_MATRIX_LAYER(  // layout: layer 1: numpad
@@ -57,7 +57,7 @@ _arrowL,	_arrowD,	_arrowR	),
 
 // right hand
 	0,		0,			0,			0,			0,			0,		0,
-	0,		_equal_kp,	_div_kp,	_mul_kp,    _sub_kp,  	0,		0,
+	_numLock_kp,	_equal_kp,	_div_kp,	_mul_kp,    _sub_kp,  	0,		_bs,
 	0,		_7_kp,  	_8_kp,  	_9_kp,  	_add_kp,   	0,		0,
 	0,		_4_kp,  	_5_kp,		_6_kp,		_add_kp, 	0,		0,
 			_1_kp, 		_2_kp,		_3_kp,		_enter_kp,	0,		0,
