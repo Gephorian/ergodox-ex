@@ -1,5 +1,9 @@
+stages:
+  - build
+
 build:
-  script: "make clean && make && make zip"
+  stage: build
+  script: "make clean && make"
   only: 
     - /^dev.*$/
     - /master/
@@ -7,5 +11,5 @@ build:
     name: "${CI_JOB_NAME}_${CI_COMMIT_REF_NAME}"
     expire_in: 2 weeks
     paths:
-    - build/*.zip
+    - build/*/firmware*
 
