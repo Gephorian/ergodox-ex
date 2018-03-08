@@ -39,7 +39,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 	_del,		_H,      	_J,      	_K,      	_L, 		_semicolon,	_enter,
 				_N,     	_M,			_comma, 	_period,    _slash,   	_shiftR,
 							_quote,		_bracketL,	_bracketR,	_altR,		_ctrlR,
-_pageU,	0,	_pause,	
+_pageU,	_insert,	_pause,	
 _pageD,	_arrowU,	_print,		_space,	
 _arrowL,	_arrowD,	_arrowR	),
 
