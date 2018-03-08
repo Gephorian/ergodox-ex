@@ -35,8 +35,8 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 // right hand
 	_F7,		_F8,		_F9,		_F10,		_F11,		_F12,		0,
 	_equal,		_6,      	_7,      	_8,     	 _9,        _0,			_bs,
-	3,		_Y,     	_U,      	_I,      	_O,        	_P,			_backslash,
-	1,			_H,      	_J,      	_K,      	_L, 		_semicolon,	_enter,
+	2,	    	_Y,     	_U,      	_I,      	_O,        	_P,			_backslash,
+	_del,		_H,      	_J,      	_K,      	_L, 		_semicolon,	_enter,
 				_N,     	_M,			_comma, 	_period,    _slash,   	_shiftR,
 							_quote,		_bracketL,	_bracketR,	_altR,		_ctrlR,
 KEY_VolumeUp,	KEY_Mute,	_pause,	
@@ -169,7 +169,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
 // left hand
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
+lpush1,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
@@ -201,7 +201,7 @@ kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 // right hand 
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
+	lpop1,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 			kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
 					kprrel,	kprrel,	kprrel,	kprrel,	kprrel,
